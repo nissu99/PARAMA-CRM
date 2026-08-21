@@ -53,6 +53,12 @@ Open `http://crm.localhost:8000/crm` and sign in as `Administrator` with the
 password stored in `CRM_ADMIN_PASSWORD`. Database, queue, and Bench data live in
 separate named volumes. Both exposed ports bind to loopback only.
 
+Already have a local Docker site? A `git pull` does not update the separate CRM
+clone or database inside the existing bench. Follow
+[Updating an Existing Local Docker Site](docs/local-docker-feature-sync.md) to
+deploy new code, migrate DocTypes, rebuild assets, verify WhatsApp, and enable
+site-level feature flags.
+
 ## Test and build
 
 ```bash
